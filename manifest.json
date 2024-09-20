@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Random Wallpaper New Tab",
+    "version": "1.0",
+    "description": "Shows a random wallpaper on new tab.",
+    "chrome_url_overrides": {
+      "newtab": "extension.html"
+    },
+    "permissions": [
+      "storage"
+    ]
+  }
+  

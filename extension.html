@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="extension.css">
+    <title>Random Wallpaper</title>
+</head>
+<body>
+    
+    <div class="container">
+        <img id="wallpaper" src="" alt="Random Wallpaper" style="display: none;"> <!-- Hide by default -->
+        <div id="loading" class="loading-spinner"></div> <!-- Circular Loading Spinner -->
+        <div id="search-container" style="display: none;"> <!-- Hide initially -->
+            <div class="overlay">
+                <h1 style="color: blue;">Google Search</h1>
+                <form action="https://www.google.com/search" method="get" class="search-bar">
+                    <input type="text" name="q" placeholder="Search or type a URL" required>
+                    <button type="submit">Google Search</button>
+                    <!-- <button type="button" onclick="document.querySelector('.search-bar input').value='';">I'm Feeling Lucky</button> -->
+                </form>
+            </div>
+        </div>
+    </div>
+    
+   
+    
+    <script src="extension.js"></script>
+</body>
+</html>

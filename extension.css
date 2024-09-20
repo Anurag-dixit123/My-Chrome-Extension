@@ -1,0 +1,85 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black; /* Change text color */
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+h1 {
+    margin: 0 0 20px 0; /* Spacing below the title */
+    font-size: 24px; /* Font size for the title */
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 50%; /* Wider for a more Google-like appearance */
+    max-width: 600px; /* Maximum width */
+    border: 1px solid #dcdcdc; /* Border similar to Google's */
+    border-radius: 24px; /* Rounded corners */
+    font-size: 16px; /* Font size for input */
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: #f8f9fa; /* Background color */
+    border-radius: 24px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 14px; /* Font size for buttons */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+button:hover {
+    background-color: #e8e8e8; /* Change background on hover */
+}
+
+.loading-spinner {
+    border: 8px solid #f3f3f3; /* Light grey background */
+    border-top: 8px solid #3498db; /* Blue color for the spinner */
+    border-radius: 50%; /* Make it circular */
+    width: 50px; /* Size of the spinner */
+    height: 50px; /* Size of the spinner */
+    animation: spin 1s linear infinite; /* Spin animation */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* Hidden by default */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
